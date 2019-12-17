@@ -29,7 +29,7 @@ def main():
     args = parser.parse_args()
 
     print('loading and building expert policy')
-    policy_fn = load_policy.load_policy(args.expert_policy_file)
+    policy_fn = load_policy.load_policy("./myFirstNet.pt")
     print('loaded and built')
 
     with tf.Session():
